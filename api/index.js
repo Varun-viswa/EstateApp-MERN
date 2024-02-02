@@ -7,7 +7,7 @@ import path from 'path'
 
 dotenv.config();
 const app= express();
-const port=3020 || process.env.PORT ;
+const port= process.env.PORT || 3020 ;
 //const path=require('path');
 //app.use(express.json());
 

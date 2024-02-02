@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target: 'https://mern-azure-est-app.azurewebsites.net/',
+        target: 'https://mern-azure-est-app.azurewebsites.net',
         secure: false,
       },
     },
