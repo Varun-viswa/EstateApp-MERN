@@ -9,7 +9,7 @@ dotenv.config();
 const app= express();
 const port= process.env.PORT || 3020 ;
 //const path=require('path');
-//app.use(express.json());
+app.use(express.json());
 
 mongoose.connect(process.env.Mongo).then(()=>{
     console.log('Conneted to MongoDB');
@@ -19,7 +19,7 @@ mongoose.connect(process.env.Mongo).then(()=>{
 });
 
 app.listen(port,()=>{
-    console.log('Server is running on port ');
+    console.log('Server is running on port ',{port});
 });
 
 app.use('/api/user',userRouter);
