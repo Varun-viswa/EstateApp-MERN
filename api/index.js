@@ -5,9 +5,12 @@ import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
 import path from 'path'
 
+
 dotenv.config();
+
 const app= express();
 const port= process.env.PORT || 3020 ;
+const __dirname=path.resolve();
 //const path=require('path');
 app.use(express.json());
 
